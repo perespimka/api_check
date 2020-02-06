@@ -1,0 +1,13 @@
+{% extends "api/base.html" %}
+{% load bootstrap4 %}
+{% block content %}
+    {% if form.errors %}
+        <p>Имя пользователя или пароль отсутствует в базе</p>
+    {% endif %}
+    <form method="POST" action="{% url 'login' %}" class="form">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button name="submit" class="btn btn-primary">Войти</button>
+        <input type="hidden" name="next" value="{% url 'index' %}">
+    </form>
+{% endblock content %}

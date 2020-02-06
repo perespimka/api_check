@@ -1,0 +1,9 @@
+{% extends "api/base.html" %}
+{% load bootstrap4 %}
+{% block content %}
+    {% for rec in user_recs %}
+        <p><a href="{% url 'edit_request' rec.id %}">{{rec.date_added}} {{rec.link}} {{rec.request_type}}</a></p>
+    {% empty %}
+        <p>В данный момент записей нет</p>
+    {% endfor %}
+{% endblock content %}

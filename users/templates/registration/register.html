@@ -1,0 +1,10 @@
+{% extends "api/base.html" %}
+{% load bootstrap4 %}
+{% block content %}
+    <form method="POST" action="{% url 'register' %}" class="form">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button name="submit" class="btn btn-primary">Зарегистрироваться</button>
+        <input type="hidden" name="next" value="{% url 'index' %}">
+    </form>
+{% endblock content %}

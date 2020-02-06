@@ -1,0 +1,37 @@
+2019-12-26 22:32:13,203 {'a':1}
+2019-12-26 22:32:13,211 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:32:13,502 http://httpbin.org:80 "GET /get HTTP/1.1" 200 183
+2019-12-26 22:32:23,349 Using selector: EpollSelector
+2019-12-26 22:34:03,961 {'a':1}
+2019-12-26 22:34:03,967 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:34:04,250 http://httpbin.org:80 "GET /get?%7B'a':1%7D HTTP/1.1" 200 195
+2019-12-26 22:34:52,401 /home/perespimka/api_check/api/views.py changed, reloading.
+2019-12-26 22:34:52,402 Using selector: EpollSelector
+2019-12-26 22:35:08,391 /home/perespimka/api_check/api/views.py changed, reloading.
+2019-12-26 22:35:08,392 Using selector: EpollSelector
+2019-12-26 22:35:21,689 {'a':1}
+2019-12-26 22:35:21,694 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:35:21,969 http://httpbin.org:80 "GET /get?%7B'a':1%7D HTTP/1.1" 200 195
+2019-12-26 22:35:29,392 Using selector: EpollSelector
+2019-12-26 22:39:51,650 <class 'str'>
+2019-12-26 22:39:51,656 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:39:51,941 http://httpbin.org:80 "GET /get?%7B'a':1%7D HTTP/1.1" 200 195
+2019-12-26 22:39:55,422 Using selector: EpollSelector
+2019-12-26 22:41:02,977 <class 'str'>
+2019-12-26 22:41:02,986 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:41:03,393 http://httpbin.org:80 "GET /get?a=1 HTTP/1.1" 200 191
+2019-12-26 22:42:58,744 /home/perespimka/api_check/api/views.py changed, reloading.
+2019-12-26 22:42:58,746 Using selector: EpollSelector
+2019-12-26 22:43:22,648 <class 'str'>
+2019-12-26 22:43:22,654 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:43:22,945 http://httpbin.org:80 "GET /get?a=1 HTTP/1.1" 200 191
+2019-12-26 22:43:46,322 <class 'str'>
+2019-12-26 22:43:46,325 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:43:46,587 http://httpbin.org:80 "GET /get?a=1 HTTP/1.1" 200 191
+2019-12-26 22:43:56,592 /home/perespimka/api_check/api/views.py changed, reloading.
+2019-12-26 22:43:56,593 Using selector: EpollSelector
+2019-12-26 22:44:13,254 <class 'str'>
+2019-12-26 22:44:13,260 Starting new HTTP connection (1): httpbin.org:80
+2019-12-26 22:44:13,525 http://httpbin.org:80 "GET /get?%7B'a':1%7D HTTP/1.1" 200 195
+2019-12-26 22:45:10,201 /home/perespimka/api_check/api/views.py changed, reloading.
+2019-12-26 22:45:10,202 Using selector: EpollSelector

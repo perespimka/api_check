@@ -1,0 +1,9 @@
+{% extends "api/base.html" %}
+{% load bootstrap4 %}
+{% block content %}
+    <form action="{% url 'edit_request' user_request.id %}" method="POST" class="form">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button name="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>API test</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+</head>
+<body>
+  <div class="container">
+    <p>
+      <div class="menu">
+        <a href="{% url 'index' %}">Главная</a>
+        <a href="{% url 'new_request' %}">Создать проверку API</a>
+        <a href="{% url 'my_requests' %}">Мои запросы</a>
+        <span class="allignright">
+          {% if user.is_authenticated %}
+            <a>Привет, {{user.username}}</a>
+            <a href="{% url 'logout' %}">Выйти</a>
+          {% else %}
+            <a href="{% url 'login' %}">Войти</a>
+            <a href="{% url 'register' %}">Зарегистрироваться</a>
+          {% endif %}
+        </span>
+      </div>
+      <div class="page-header">
+        <h1>API test</h1>
+      </div>
+      
+    </p>
+    {% block content %}{% endblock content %}
+  </div>
+</body>
+</html>

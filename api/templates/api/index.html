@@ -1,0 +1,44 @@
+{% extends "api/base.html" %}
+
+{% block content %}
+    <form action="{% url 'index' %}" method="POST" class="form" >
+        {% csrf_token %}
+        <p>Тип запроса:</p>
+            <p>
+                <select name="type" class="form-control" >
+                    <option value="get">Get</option>
+                    <option value="post">Post</option>
+                </select>
+            </p>
+
+
+        <p>Ссылка:</p>
+        <p>
+            <input type="text" name="link" size="36" class="form-control">
+        </p>
+
+        <p>Данные запроса:</p> 
+        <p>
+            <select name="post_type" class="form-control" >
+                <option value="text">Text</option>
+                <option value="application/json">Application/json</option>
+                <option value="multipart/form-data">Multipart/form-data</option>
+            </select><br>
+            <textarea name="request" class="form-control" rows="6"></textarea>
+        </p>
+        <button name="submit" class="btn btn-primary">Отправить</button>
+    </form>  
+    <p>
+        {% if resp_data %}
+        <table class="table table-bordered">
+            <tr>
+                <td>Код ответа:</td><td>{{resp_data.0}}</td>
+            </tr>
+            <tr>
+                <td>Текст ответа:</td><td>{{resp_data.1}}</td>
+            </tr>
+
+        </table>    
+    </p>
+    {% endif %}      
+{% endblock content %}
